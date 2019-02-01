@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>desweb.pyupv.pgOperations.pgOperations.pgOperations</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="desweb.pyupv.pgOperations.pgOperations-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;desweb ::
+        Package&nbsp;pyupv ::
+        Package&nbsp;pgOperations ::
+        <a href="desweb.pyupv.pgOperations.pgOperations-module.html">Module&nbsp;pgOperations</a> ::
+        Class&nbsp;pgOperations
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="desweb.pyupv.pgOperations.pgOperations.pgOperations-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class pgOperations</h1><p class="nomargin-top"><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations">source&nbsp;code</a></span></p>
+<pre class="literalblock">
+
+Perform the most common operations with PostGIS:
+- Connection, insert, delete, update, select
+
+</pre>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Instance Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-InstanceMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="__init__"></a><span class="summary-sig-name">__init__</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">oPgConnect</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.__init__">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations.pgOperations-class.html#pgInsert" class="summary-sig-name">pgInsert</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">nom_tabla</span>,
+        <span class="summary-sig-arg">oStrFielsAndValues</span>,
+        <span class="summary-sig-arg">str_fields_returning</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Inserts a row in a table</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgInsert">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations.pgOperations-class.html#pgUpdate" class="summary-sig-name">pgUpdate</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">table_name</span>,
+        <span class="summary-sig-arg">oStrFielsAndValues</span>,
+        <span class="summary-sig-arg">cond_where</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">list_values_cond_where</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Updates a table</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgUpdate">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations.pgOperations-class.html#pgDelete" class="summary-sig-name">pgDelete</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">table_name</span>,
+        <span class="summary-sig-arg">cond_where</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">list_values_cond_where</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Deletes any row from any table.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgDelete">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations.pgOperations-class.html#pgSelect" class="summary-sig-name">pgSelect</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">table_name</span>,
+        <span class="summary-sig-arg">string_fields_to_select</span>,
+        <span class="summary-sig-arg">cond_where</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="summary-sig-arg">list_val_cond_where</span>=<span class="summary-sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>)</span><br />
+      Select rows of a table</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgSelect">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations.pgOperations-class.html#getTableFieldNames" class="summary-sig-name">getTableFieldNames</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">nomTable</span>,
+        <span class="summary-sig-arg">changeGeomBySt_asgeojosonGeom</span>=<span class="summary-sig-default">True</span>,
+        <span class="summary-sig-arg">nomGeometryField</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">geom</code><code class="variable-quote">'</code></span>)</span><br />
+      Retuns a list with the table field names.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.getTableFieldNames">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="query"></a><span class="summary-name">query</span> = <code title="None">None</code><br />
+      Store the last query - class variable
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="oPgConnect"></a><span class="summary-name">oPgConnect</span> = <code title="None">None</code><br />
+      pgConnection object - class variable
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Method Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-MethodDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="pgInsert"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pgInsert</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">nom_tabla</span>,
+        <span class="sig-arg">oStrFielsAndValues</span>,
+        <span class="sig-arg">str_fields_returning</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgInsert">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Inserts a row in a table
+
+@param nom_tabla: table name included the schema. Ej. &quot;d.linde&quot;. 
+    Mandatory specify the schema name: public.tablename
+@type  nom_tabla: string
+@param oStrFielsAndValues: object with the field names and values to insert
+@type oStrFielsAndValues: StrFielsAndValues
+@param str_fields_returning: string with the field names, of the inserted  row, to return.
+    ej: &quot;gid, date&quot;, will return the field gid and date
+@type str_fields_returning: string
+
+@return:
+    if str_fields_returning is None, returns None
+    if str_fields_returning is 'gid, date' returns a list with a tuple with the gid and date
+        gid and date have to be fields of the table.
+        This is used to know the gid of the new row inserted
+Example
+1. Example of use without dictionaries:
+
+import pgOperations2 as pgo
+oCon=pgo.pgConnect(database=&quot;pruebas&quot;, user=&quot;postgres&quot;, password=&quot;postgres&quot;, host=&quot;localhost&quot;, port=&quot;5432&quot;)
+oStrFielsAndValuesBase=pgo.StrFielsAndValuesBase(
+    str_field_names=&quot;depth, description, geom&quot;, 
+    list_field_values=[12.15, &quot;water well&quot;,&quot;POINT(100 200)&quot;], 
+    str_s_values=&quot;%s,%s,st_transform(st_geometryfromtext(%s,25830),25831)&quot;)
+oOp=pgo.pgOperations(oPgConnect=oCon)
+resp=oOp.pgInsert(nom_tabla=&quot;d.points&quot;, oStrFielsAndValues=oStrFielsAndValuesBase, str_fields_returning=&quot;gid&quot;)
+print resp
+
+The result is:
+Connected
+Inserting
+insert into d.points (depth, description, geom) values (%s,%s,st_transform(st_geometryfromtext(%s,25830),25831)) returning gid
+[(1,)]
+
+2. Example of use with dictionaries, and automatic generation of expressions
+
+d={&quot;description&quot;: &quot;water well&quot;, &quot;depth&quot;: 12.15, &quot;geom&quot;: &quot;100 200&quot;}
+oStrFielsAndValues=pgo.StrFielsAndValues(d=d, 
+                                         list_fields_to_remove=[&quot;depth&quot;], 
+                                         geom_field_name=&quot;geom&quot;, 
+                                         epsg='25830',
+                                         geometry_type=&quot;POINT&quot;,
+                                         epsg_to_reproject=&quot;25831&quot;)
+
+print oStrFielsAndValues.str_field_names
+print oStrFielsAndValues.list_field_values
+print oStrFielsAndValues.str_s_values
+
+resp=oOp.pgInsert(nom_tabla=&quot;d.points&quot;, oStrFielsAndValues=oStrFielsAndValues, str_fields_returning=&quot;gid&quot;)
+print resp
+
+The result is
+geom,description
+['POINT(100 200)', 'water well']
+st_transform(st_geometryfromtext(%s,25830),25831),%s
+Inserting
+insert into d.points (geom,description) values (st_transform(st_geometryfromtext(%s,25830),25831),%s) returning gid
+[(2,)]
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="pgUpdate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pgUpdate</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">table_name</span>,
+        <span class="sig-arg">oStrFielsAndValues</span>,
+        <span class="sig-arg">cond_where</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">list_values_cond_where</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgUpdate">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Updates a table
+
+@type  table_name: string
+@param table_name: table name included the schema. Ej. &quot;d.linde&quot;. 
+    Mandatory specify the schema name: public.tablename
+@type oStrFielsAndValues: StrFielsAndValues
+@param oStrFielsAndValues: object with the field names and values to insert
+@type cond_where: string
+@param cond_where: the where condition to find the affected rows without values. 
+    Instead of the values you have to put %s. e.g 'where area &gt; %s and province = %s'
+@type list_values_cond_where: list
+@param list_values_cond_where: List of the values of the %s in the 
+    parameter cond_where. e.g: [250, 'Alicante']
+@returns: The number of updated rows
+
+1. Example of use without dictionaries:
+import pgOperations2 as pgo
+oCon=pgo.pgConnect(database=&quot;pruebas&quot;, user=&quot;postgres&quot;, password=&quot;postgres&quot;, host=&quot;localhost&quot;, port=&quot;5432&quot;)
+
+#update the point gid=1 to this new values
+#you can omit the values not to update, or set the parameter list_fields_to_remove
+oStrFielsAndValuesBase=pgo.StrFielsAndValuesBase(
+    str_field_names=&quot;description, geom&quot;, 
+    list_field_values=[&quot;water well2&quot;,&quot;POINT(300 300)&quot;], 
+    str_s_values=&quot;%s,st_transform(st_geometryfromtext(%s,25830),25831)&quot;)
+    
+print oStrFielsAndValuesBase.str_field_names
+print oStrFielsAndValuesBase.list_field_values
+print oStrFielsAndValuesBase.str_s_values
+
+oOp=pgo.pgOperations(oPgConnect=oCon)
+resp=oOp.pgUpdate(table_name=&quot;d.points&quot;, 
+                  oStrFielsAndValues=oStrFielsAndValuesBase, 
+                  cond_where=&quot;where gid=%s&quot;, 
+                  list_values_cond_where=[1])
+print resp    
+
+
+Result
+
+Connected
+description, geom
+['water well2', 'POINT(300 300)']
+%s,st_transform(st_geometryfromtext(%s,25830),25831)
+Query: update d.points set (description, geom) = (%s,st_transform(st_geometryfromtext(%s,25830),25831)) where gid=%s
+1
+
+2. Example of use with dictionaries, and automatic generation of expressions
+
+import pgOperations2 as pgo
+oCon=pgo.pgConnect(database=&quot;pruebas&quot;, user=&quot;postgres&quot;, password=&quot;postgres&quot;, host=&quot;localhost&quot;, port=&quot;5432&quot;)
+
+#update the point gid=1 to this new values
+#you can omit the values not to update, or set the parameter list_fields_to_remove
+d={&quot;description&quot;: &quot;water well2&quot;, &quot;geom&quot;: &quot;300 300&quot;}
+oStrFielsAndValues=pgo.StrFielsAndValues(d=d, 
+                                         list_fields_to_remove=None, 
+                                         geom_field_name=&quot;geom&quot;, 
+                                         epsg='25830',
+                                         geometry_type=&quot;POINT&quot;,
+                                         epsg_to_reproject=&quot;25831&quot;)
+
+print oStrFielsAndValues.str_field_names
+print oStrFielsAndValues.list_field_values
+print oStrFielsAndValues.str_s_values
+
+oOp=pgo.pgOperations(oPgConnect=oCon)
+resp=oOp.pgUpdate(table_name=&quot;d.points&quot;, 
+                  oStrFielsAndValues=oStrFielsAndValues, 
+                  cond_where=&quot;where gid=%s&quot;, 
+                  list_values_cond_where=[1])
+print resp
+
+Result
+
+geom,description
+['POINT(300 300)', 'water well2']
+st_transform(st_geometryfromtext(%s,25830),25831),%s
+Query: update d.points set (geom,description) = (st_transform(st_geometryfromtext(%s,25830),25831),%s) where gid=%s
+1  
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="pgDelete"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pgDelete</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">table_name</span>,
+        <span class="sig-arg">cond_where</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">list_values_cond_where</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgDelete">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Deletes any row from any table. Example of use:
+
+@type  table_name: string
+@param table_name: table name included the schema. Ej. &quot;d.linde&quot;. 
+    Mandatory specify the schema name: public.tablename
+@type cond_where: string
+@param cond_where: the where condition to find the affected rows without values. 
+    Instead of the values you have to put %s. e.g 'where area &gt; %s and province = %s'
+@type list_values_cond_where: list
+@param list_values_cond_where: list of the values of the %s in the 
+    parameter cond_where. e.g: [250, 'Alicante']
+@retuns: The number of deleted rows 
+
+Examples of use:
+    #deletes the rows which gid &lt; 4
+    pgDelete2(table_name='d.buildings', cond_where='where gid &lt; %s', list_values_cond_where=[4])
+    #deletes all rows
+    pg_delete2(table_name='d.buildings') 
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="pgSelect"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">pgSelect</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">table_name</span>,
+        <span class="sig-arg">string_fields_to_select</span>,
+        <span class="sig-arg">cond_where</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"></code><code class="variable-quote">'</code></span>,
+        <span class="sig-arg">list_val_cond_where</span>=<span class="sig-default"><code class="variable-group">[</code><code class="variable-group">]</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.pgSelect">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Select rows of a table
+
+@type  table_name: string
+@param table_name: table name included the schema. Ej. &quot;d.linde&quot;. 
+    Mandatory specify the schema name: public.tablename
+@type string_fields_to_select: string
+@param string_fields_to_select: string with the fields to select, comma separated. e.g: 'gid, descripcion, area, st_asgeojson(geom)'
+@type cond_where: string
+@param cond_where: the where condition to find the affected rows without values. 
+    Instead of the values you have to put %s. e.g 'where area &gt; %s and province = %s'
+@type list_values_cond_where: list
+@param list_values_cond_where: list of the values of the %s in the 
+    parameter cond_where. e.g: [250, 'Alicante']        
+@return: 
+    * None if there is not any selected row
+    * a list of dictionaries fieldName:fieldValue. Each dictionary is a selected row
+      to get the fist dictionary: lista[0]
+      to get the second dictionary: lista[1]
+      ... and so on
+
+Example of use:
+import pgOperations2 as pgo
+oCon=pgo.pgConnect(database=&quot;pruebas&quot;, user=&quot;postgres&quot;, password=&quot;postgres&quot;, host=&quot;localhost&quot;, port=&quot;5432&quot;)  
+oOp=pgo.pgOperations(oPgConnect=oCon)
+resp=oOp.pgSelect(table_name=&quot;d.points&quot;, 
+                  string_fields_to_select='gid,depth,description,st_astext(geom)', 
+                  cond_where = 'where gid &gt; %s', 
+                  list_val_cond_where=[0])
+print resp 
+
+Result
+
+Connected
+SELECT array_to_json(array_agg(registros)) FROM (select gid,depth,description,st_astext(geom) from d.points as t where gid &gt; %s limit 100) as registros;
+[{u'depth': None, u'gid': 2, u'st_astext': u'POINT(-673652.157623927 202.793645345479)', u'description': u'water well'}, 
+ {u'depth': 12.15, u'gid': 1, u'st_astext': u'POINT(-673449.363930927 304.189446432685)', u'description': u'water well2'}
+]
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="getTableFieldNames"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">getTableFieldNames</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">nomTable</span>,
+        <span class="sig-arg">changeGeomBySt_asgeojosonGeom</span>=<span class="sig-default">True</span>,
+        <span class="sig-arg">nomGeometryField</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">geom</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#pgOperations.getTableFieldNames">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Retuns a list with the table field names.
+@type  nomTable: string
+@param nomTable: table name included the schema. Ej. &quot;d.linde&quot;. 
+    Mandatory specify the schema name: public.tablename
+@type  changeGeomBySt_asgeojosonGeom: boolean
+@param changeGeomBySt_asgeojosonGeom: Specifies id the geom name field is changed by st_asgeojson(fieldName).     
+@type  nomGeometryField: string
+@param nomGeometryField: the geometry field name
+@return: A list with the table fiedl names
+
+Executes the sentence: 
+SELECT column_name FROM information_schema.columns WHERE table_schema='h30' and table_name = 'linde';
+
+Examples of use:
+    listaCampos=getTableFieldNames('d.buildings')
+        Returns: [u'gid', u'descripcion', u'area', 'st_asgeojson(geom)', u'fecha']
+    listaCampos=getTableFieldNames(d.buildings', changeGeomBySt_asgeojosonGeom=False, nomGeometryField='geom')
+        Returns: [u'gid', u'descripcion', u'area', u'geom', u'fecha']
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="desweb.pyupv.pgOperations.pgOperations-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Feb  1 13:56:58 2019
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

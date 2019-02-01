@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>desweb.pyupv.pgOperations.pgOperations</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;desweb ::
+        Package&nbsp;pyupv ::
+        Package&nbsp;pgOperations ::
+        Module&nbsp;pgOperations
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="desweb.pyupv.pgOperations.pgOperations-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module pgOperations</h1><p class="nomargin-top"><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html">source&nbsp;code</a></span></p>
+<pre class="literalblock">
+
+Created on 16 feb. 2018
+@author: Gaspar Mora-Navarro
+Polytechnique University of Valencia
+Department of Cartographic Engineering Geodesy and Photogrammetry
+Higher Technical School of Geodetic, Cartographic and Topographical Engineering
+joamona@cgf.upv.es
+
+This library allow you to perform the most common operations with PostGIS:
+    - Connection, insert, delete, update, select, create and drop databases
+
+You first have to get a object of the classs pgConnect. Later you can create
+and object pgOperations to perform the operations. The pgOperations methods are
+applicable to any database and any table, with or without any type of geometry
+
+This library depends of the psycopg2 library (http://initd.org/psycopg/)
+This library uses Python 2.7
+
+In the method examples it is assumed that you have created the following table:
+create table d.points (gid serial primary key, description varchar, depth double precision, geom geometry('POINT',25831));
+
+</pre>
+
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Classes</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Classes"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="desweb.pyupv.pgOperations.pgOperations.pgConnect-class.html" class="summary-name">pgConnect</a><br />
+      Connects with the database
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="desweb.pyupv.pgOperations.pgOperations.pgOperations-class.html" class="summary-name">pgOperations</a><br />
+      Perform the most common operations with PostGIS:...
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="desweb.pyupv.pgOperations.pgOperations.StrFielsAndValuesBase-class.html" class="summary-name">StrFielsAndValuesBase</a><br />
+      Class with tree properties uefull to the methods of the class pgOperations
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="desweb.pyupv.pgOperations.pgOperations.StrFielsAndValues-class.html" class="summary-name">StrFielsAndValues</a><br />
+      Class with tree properties uefull to the methods of the class pgOperations
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTIONS ==================== -->
+<a name="section-Functions"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Functions</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Functions"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations-module.html#transform_coords_ol_to_postgis" class="summary-sig-name">transform_coords_ol_to_postgis</a>(<span class="summary-sig-arg">coords_geom</span>,
+        <span class="summary-sig-arg">splitString</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string">,</code><code class="variable-quote">'</code></span>)</span><br />
+      Receives a string coordinate like 'x,y,x,y,x,y,....' from openlayers...</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#transform_coords_ol_to_postgis">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations-module.html#transform_coords_land_registry_gml_to_postgis" class="summary-sig-name">transform_coords_land_registry_gml_to_postgis</a>(<span class="summary-sig-arg">coords_geom</span>,
+        <span class="summary-sig-arg">splitString</span>=<span class="summary-sig-default"><code class="variable-quote">'</code><code class="variable-string"> </code><code class="variable-quote">'</code></span>)</span><br />
+      Receives a string coordinate like 'x,y x,y x,y,....' from land registry gml...</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#transform_coords_land_registry_gml_to_postgis">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations-module.html#reverseXY" class="summary-sig-name">reverseXY</a>(<span class="summary-sig-arg">strCoords</span>,
+        <span class="summary-sig-arg">separatorIn</span>,
+        <span class="summary-sig-arg">separatorOut</span>)</span><br />
+      Changes the x y order for y x in a string
+Receives a string with 'x,y,x,y,...' 'or x y x y ...' and retuns a string with 'y,x,y,x,...'
+    or 'y x y x ...'
+@type  strCoords: string
+@param strCoords: Coordenates string comma or space separated:
+    'x,y,x,y,...' or 'x y x y ...'
+@type  separatorIn: string
+@param separatorIn: Coodinates separator in the input string.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#reverseXY">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations-module.html#createDatabase" class="summary-sig-name">createDatabase</a>(<span class="summary-sig-arg">dbs</span>)</span><br />
+      Connects with the postgress database, and use the connection to creates the new database specified in the dbs dictionary
+the dbs dicctionary contains the following keys: user, password, database, port, host
+oConn is a pgOperation.pgConnection object.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#createDatabase">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="desweb.pyupv.pgOperations.pgOperations-module.html#dropDatabase" class="summary-sig-name">dropDatabase</a>(<span class="summary-sig-arg">dbs</span>)</span><br />
+      Connects with the postgress database, and use the connection to delete de database, whose name is in the dbs dictionary...</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#dropDatabase">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-Variables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="'desweb.pyupv.pgOperations'"><code class="variable-quote">'</code><code class="variable-string">desweb.pyupv.pgOperations</code><code class="variable-quote">'</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== FUNCTION DETAILS ==================== -->
+<a name="section-FunctionDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Function Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-FunctionDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="transform_coords_ol_to_postgis"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">transform_coords_ol_to_postgis</span>(<span class="sig-arg">coords_geom</span>,
+        <span class="sig-arg">splitString</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string">,</code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#transform_coords_ol_to_postgis">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Receives a string coordinate like 'x,y,x,y,x,y,....' from openlayers
+Returns a string like 'x y, x y, x y, ....'
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="transform_coords_land_registry_gml_to_postgis"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">transform_coords_land_registry_gml_to_postgis</span>(<span class="sig-arg">coords_geom</span>,
+        <span class="sig-arg">splitString</span>=<span class="sig-default"><code class="variable-quote">'</code><code class="variable-string"> </code><code class="variable-quote">'</code></span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#transform_coords_land_registry_gml_to_postgis">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Receives a string coordinate like 'x,y x,y x,y,....' from land registry gml
+Returns a string like 'x y, x y, x y, ....'
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="reverseXY"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">reverseXY</span>(<span class="sig-arg">strCoords</span>,
+        <span class="sig-arg">separatorIn</span>,
+        <span class="sig-arg">separatorOut</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#reverseXY">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Changes the x y order for y x in a string
+Receives a string with 'x,y,x,y,...' 'or x y x y ...' and retuns a string with 'y,x,y,x,...'
+    or 'y x y x ...'
+@type  strCoords: string
+@param strCoords: Coordenates string comma or space separated:
+    'x,y,x,y,...' or 'x y x y ...'
+@type  separatorIn: string
+@param separatorIn: Coodinates separator in the input string. Can be ',' or ' '     
+@type  separatorOut: string
+@param separatorOut: Coodinates eparator in the output string. Can be ',' or ' '
+@return: a string with the 'y,x,y,x,...' or 'y x y x ...', depending of the separator
+
+Example of use:
+    s='1,2,1,2,1,2'
+    print reverseXY(s,',',',')
+    '2,1,2,1,2,1'
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="createDatabase"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">createDatabase</span>(<span class="sig-arg">dbs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#createDatabase">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Connects with the postgress database, and use the connection to creates the new database specified in the dbs dictionary
+the dbs dicctionary contains the following keys: user, password, database, port, host
+oConn is a pgOperation.pgConnection object. Adds to the new database, the extension postgis
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="dropDatabase"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">dropDatabase</span>(<span class="sig-arg">dbs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="desweb.pyupv.pgOperations.pgOperations-pysrc.html#dropDatabase">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <pre class="literalblock">
+
+Connects with the postgress database, and use the connection to delete de database, whose name is in the dbs dictionary
+The dbs dicctionary contains the following keys: user, password, database, port, host
+
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+      <th class="navbar" width="100%"></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Feb  1 13:56:58 2019
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
